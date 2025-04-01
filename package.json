@@ -11,7 +11,9 @@
   "dependencies": {
     "@fontsource/ibm-plex-mono": "^5.2.5",
     "@fontsource/ibm-plex-sans": "^5.2.5",
-    "astro": "^5.5.5"
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^5.5.5",
+    "astro-icon": "^1.1.5"
   },
   "devDependencies": {
     "prettier": "^3.2.5",
