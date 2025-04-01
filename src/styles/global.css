@@ -2,26 +2,19 @@
   --font-body: 'IBM Plex Sans', sans-serif;
   --font-mono: 'IBM Plex Mono', monospace;
 
-  --color-bg: #ffffff;
-  --color-text: #222222;
-  --color-primary: #a9624c;
-  --color-secondary: #ca895f;
-  --color-border: #dddddd;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-bg: #121212;
-    --color-text: #e0e0e0;
-    --color-primary: #a15e49;
-    --color-secondary: #ca895f;
-    --color-border: #444444;
-  }
+  --color-bg: #121212;
+  --color-bg-bright: #222222;
+  --color-bg-button: #333333;
+  --color-bg-button-bright: #444444;
+  --color-text: #e0e0e0;
+  --color-secondary: #a15e49;
+  --color-primary: #ca895f;
+  --color-border: #444444;
 }
 
 body {
   font-family: var(--font-body);
-  background-color: var(--color-bg);
+  background: linear-gradient(135deg, var(--color-bg), var(--color-bg-bright));
   color: var(--color-text);
   margin: 0;
   padding: 0;

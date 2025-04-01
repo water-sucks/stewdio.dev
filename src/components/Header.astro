@@ -1,0 +1,53 @@
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/">
+        <img
+          class="logo-img"
+          src="/assets/stewdio-pending-logo.png"
+          alt="Stewdio logo (pending)"
+        />
+        Stewdio
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <a href="/about">About</a>
+      <a href="/blog">Blog</a>
+    </nav>
+  </div>
+</header>
+
+<style>
+  header {
+    padding: 1rem;
+  }
+
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--color-text);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .logo-img {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+</style>
