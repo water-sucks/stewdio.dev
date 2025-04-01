@@ -1,0 +1,89 @@
+---
+import Layout from '@layouts/Layout.astro';
+---
+
+<Layout title="About">
+  <h1>About</h1>
+  <p>
+    This application is version control, but made simple. Composers and audio
+    engineers need to be able to version their projects properly. Imagine naming
+    your files
+    <code>"1.1.0-final-for-real"</code> or something dumb like that. Yeah, that sucks!
+    Stewdio is here to make your life easier.
+  </p>
+  <p>
+    We're building this for the <a href="https://sfhacks.io">SF Hacks</a> 2025 hackathon
+    between April 4-6, 2025. Take a look at our <a href="/blog">blog</a> for updates!
+  </p>
+
+  <h2>Team</h2>
+  <div class="authors">
+    <div class="author-card">
+      <img src="/assets/watersucks.png" alt="Varun Narravula" />
+      <h3>Varun Narravula</h3>
+      <p>Aspiring, but never achieving.</p>
+    </div>
+    <div class="author-card">
+      <img src="/assets/whale.png" alt="Vignesh Guruswami" />
+      <h3>Vignesh Guruswami</h3>
+      <p>The elite whale #75. Stewdio's mastermind.</p>
+    </div>
+    <div class="author-card">
+      <img src="/assets/matt.png" alt="Matt Stoffel" />
+      <h3>Matt Stoffel</h3>
+      <p>
+        I like <a href="https://nixos.org">Nix</a>and <a
+          href="https://ghostty.org">Ghostty!</a
+        >
+      </p>
+    </div>
+    <div class="author-card">
+      <img src="/assets/trollface.png" alt="Arjun Bhagat" />
+      <h3>Arjun Bhagat</h3>
+      <p>Tarkov and CS2 are the GOAT games.</p>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  h1 {
+    text-align: center;
+  }
+
+  .authors {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+  }
+
+  .author-card {
+    width: 200px;
+    text-align: center;
+    padding: 1rem;
+    background: var(--color-bg-button);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .author-card:hover {
+    transform: scale(1.05);
+  }
+
+  .author-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .author-card h3 {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .author-card p {
+    font-size: 1rem;
+  }
+</style>
